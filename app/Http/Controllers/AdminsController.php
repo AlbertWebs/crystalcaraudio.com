@@ -3838,8 +3838,8 @@ public function addProductToFacebookPixel(){
             $ProExcel->link = $ProductUrl;
             $ProExcel->image_link = $ImageURL;
             $ProExcel->brand = $ProAdd->brand;
-            $ProExcel->gtin = $ImageURL;
-            $ProExcel->mpn = $ProAdd->brand;
+            $ProExcel->gtin = "0";
+            $ProExcel->mpn = "0";
             $ProExcel->save();
     }
     return redirect()->route('exporting');
