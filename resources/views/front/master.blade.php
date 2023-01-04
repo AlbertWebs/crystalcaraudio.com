@@ -271,7 +271,7 @@
             "https://www.instagram.com/crys_talcaraudio/",
             "https://www.linkedin.com/company/crystal-car-audio/"
           ],
-
+          "priceRange": "$$$$",
           "image": "https://crystalcaraudio.com/uploads/logo/Crystal-Logo-06.png",
           "description": "Crystal Car Audio - Clear Beats.  We are experts in car music system Installation. car radio, speakers, subwoofers, Boosters etc. We sell and install car entertainment products, Alarms and Trackers.",
           "address": {
