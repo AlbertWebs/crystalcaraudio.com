@@ -269,7 +269,7 @@
           "sameAs": [
             "https://www.facebook.com/Crystalclearbeats",
             "https://www.instagram.com/crys_talcaraudio/",
-            "https://www.linkedin.com/company/crystal-car-audio/",
+            "https://www.linkedin.com/company/crystal-car-audio/"
           ],
 
           "image": "https://crystalcaraudio.com/uploads/logo/Crystal-Logo-06.png",
