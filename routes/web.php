@@ -657,11 +657,11 @@ Route::get('sitemap', function() {
 			$sitemap->add("https://www.crystalcaraudio.com/product/$post->slung",'2012-08-25T20:10:00+02:00', '0.8', 'daily');
 		}
 
-		$posts = DB::table('variations')->orderBy('created_at', 'desc')->get();
-		// add every product to the sitemap
-		foreach ($posts as $post) {
-			$sitemap->add("https://www.crystalcaraudio.com/product-variation/$post->slung",'2012-08-25T20:10:00+02:00', '0.8', 'daily');
-		}
+		// $posts = DB::table('variations')->orderBy('created_at', 'desc')->get();
+
+		// foreach ($posts as $post) {
+		// 	$sitemap->add("https://www.crystalcaraudio.com/product-variation/$post->slung",'2012-08-25T20:10:00+02:00', '0.8', 'daily');
+		// }
 	}
 
 	// show your sitemap (options: 'xml' (default), 'html', 'txt', 'ror-rss', 'ror-rdf')
