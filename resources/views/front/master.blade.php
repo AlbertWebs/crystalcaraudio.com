@@ -95,7 +95,7 @@
             <span class="mobile-menu-close"><i class="fa fa-times"></i></span>
             <nav class="mobile-nav">
                 <ul class="mobile-menu">
-                    
+
 
                     <li><a href="{{url('/')}}/shop-by-brand">Our Brands</a></li>
 
@@ -258,6 +258,35 @@
 
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     {{-- Google Translate --}}
+    {{-- Schema --}}
+    <script type='application/ld+json'>
+        {
+          "@context": "http://www.schema.org",
+          "@type": "ProfessionalService",
+          "name": "Crystal Car Audio",
+          "url": "https://crystalcaraudio.com/",
+          "logo": "https://crystalcaraudio.com/uploads/logo/Crystal-Logo-06.png",
+          "sameAs": [
+            "https://www.facebook.com/Crystalclearbeats",
+            "https://www.instagram.com/crys_talcaraudio/",
+            "https://www.linkedin.com/company/crystal-car-audio/",
+          ],
+          "priceRange": "$$$$",
+          "image": "https://crystalcaraudio.com/uploads/logo/Crystal-Logo-06.png",
+          "description": "Crystal Car Audio - Clear Beats.  We are experts in car music system Installation. car radio, speakers, subwoofers, Boosters etc. We sell and install car entertainment products, Alarms and Trackers.",
+          "address": {
+             "@type": "PostalAddress",
+             "streetAddress": " Munyu Road , Sheikh Karume Junction Pramukh Plaza 2nd Floor Shop 22",
+             "addressLocality": "Nairobi",
+             "addressRegion": "Kenya",
+             "postalCode": "00100",
+             "addressCountry": "Kenya"
+          },
+           "openingHours": "Mo 01:00-01:00 Tu 01:00-01:00 We 01:00-01:00 Th 01:00-01:00 Fr 01:00-01:00 Sa 01:00-01:00 Su 01:00-01:00",
+           "telephone": "+254790721397"
+        }
+    </script>
+    {{--  --}}
 </body>
 @endforeach
 
