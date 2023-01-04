@@ -3840,6 +3840,8 @@ public function addProductToFacebookPixel(){
             $ProExcel->brand = $ProAdd->brand;
             $ProExcel->gtin = "0";
             $ProExcel->mpn = "0";
+
+            $ProExcel->availability_date = "2023-09-24T11:07+0100";
             $ProExcel->save();
     }
     return redirect()->route('exporting');
