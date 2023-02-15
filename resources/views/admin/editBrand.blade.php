@@ -88,7 +88,7 @@
                         <label for="text1" class="control-label col-lg-4">Description</label>
 
                         <div class="col-lg-8">
-                            <textarea name="content" id="article_ckeditor" rows="10" cols="80"></textarea>
+                            <textarea name="content" id="article_ckeditor" rows="10" cols="80">{{$Client->content}}</textarea>
 
                             <script src="https://amanivehiclesounds.co.ke/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
                             <script>
