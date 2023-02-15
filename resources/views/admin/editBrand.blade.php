@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="wrap" >
-        
+
 
         <!-- HEADER SECTION -->
         @include('admin.top')
@@ -18,11 +18,12 @@
 
         <!--PAGE CONTENT -->
         <div id="content">
-             
+
             <div class="inner" style="min-height: 700px;">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1> Edit Brands </h1>
+                        {{-- <h1> Edit Brands </h1> --}}
+                        <center><h2> Edit Brands </h2></center>
                     </div>
                 </div>
                   <hr />
@@ -36,12 +37,12 @@
                 </div>
                   <!--END BLOCK SECTION -->
                 <hr />
-                   
-               
+
+
                   <!-- Inner Content Here -->
-                 
+
             <div class="inner">
-                
+
 
               <div class="row">
                <center>
@@ -53,11 +54,12 @@
 							   <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
 				@endif
                  </center>
-                 
+
 
                  <form class="form-horizontal" method="post"  action="{{url('/admin/edit_Brand')}}/{{$Client->id}}" enctype="multipart/form-data">
-                    
-                 <div class="form-group">
+
+
+                    <div class="form-group">
                         <label for="text1" class="control-label col-lg-4">Client</label>
 
                         <div class="col-lg-8">
@@ -65,10 +67,27 @@
                         </div>
                     </div>
 
+                    <div class="form-group">
+                        <label for="text1" class="control-label col-lg-4">Meta Title</label>
+
+                        <div class="col-lg-8">
+                            <input type="text" id="text1" name="title" value="{{$Client->title}}" placeholder=" " class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="text1" class="control-label col-lg-4">Meta Description</label>
+
+                        <div class="col-lg-8">
+                            <textarea id="limiter" name="meta" class="form-control">{{$Client->meta}}</textarea>
+                            {{-- <p class="help-block">Brief Description of the product for SEO</p> --}}
+                        </div>
+                    </div>
+
 
                     <center>
                     <div class="form-group col-lg-12">
-                    
+
                         <label class="control-label">Image (Main)</label>
                         <div class="">
                             <div class="fileupload fileupload-new" data-provides="fileupload">
@@ -79,22 +98,22 @@
                                     <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
                                 </div>
                             </div>
-                        
-                    </div>
-                    
-                   
+
                     </div>
 
-                   
+
+                    </div>
+
+
                     </center>
                     <br><br>
                     <div class="col-lg-12 text-center">
                       <button type="submit" class="btn btn-success"><i class="icon-check icon-white"></i> Save </button>
                     </div>
-                    
+
                     <input type="hidden" name="image_one_cheat" value="{{$Client->image}}">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                    
+
                 <form>
               </div>
 
@@ -103,7 +122,7 @@
 
 
 
-                
+
             </div>
 
         </div>

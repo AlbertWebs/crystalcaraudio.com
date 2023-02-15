@@ -3222,7 +3222,8 @@ public function edit_Brand(Request $request, $id){
 
     $updateDetails = array(
         'name' => $request->name,
-
+        'title' => $request->title,
+        'meta' => $request->meta,
         'image' =>$image_one,
 
 
