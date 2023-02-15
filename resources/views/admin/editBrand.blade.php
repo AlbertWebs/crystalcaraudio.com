@@ -71,7 +71,7 @@
                         <label for="text1" class="control-label col-lg-4">Meta Title</label>
 
                         <div class="col-lg-8">
-                            <input type="text" id="text1" name="title" value="{{$Client->title}}" placeholder=" " class="form-control" />
+                            <input type="text" id="limiter-text"  name="title" value="{{$Client->title}}" placeholder=" " class="form-control" />
                         </div>
                     </div>
 
