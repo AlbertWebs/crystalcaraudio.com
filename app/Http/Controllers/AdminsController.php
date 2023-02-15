@@ -3224,6 +3224,7 @@ public function edit_Brand(Request $request, $id){
         'name' => $request->name,
         'title' => $request->title,
         'meta' => $request->meta,
+        'content' => $request->content,
         'image' =>$image_one,
 
 
