@@ -3,7 +3,7 @@
 
     <div class="blog-section font2 media-with-zoom appear-animate" data-animation-name="fadeInUpShorter" data-animation-delay="250">
         <div class="heading">
-            <h2 class="text-uppercase">FROM THE BLOG</h2>
+            <h2 class="text-uppercase">FROM THE BLOGS</h2>
         </div>
 
         <div class="owl-carousel owl-theme mb-0" data-owl-options="{
