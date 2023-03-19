@@ -2618,7 +2618,7 @@ public function editBlog($id){
 
 
 public function edit_Blog(Request $request, $id){
-    $path = 'uploads/blog';
+    $path = 'uploads/blogs';
     if(isset($request->image_one)){
         $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
