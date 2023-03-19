@@ -2585,6 +2585,7 @@ public function add_Blog(Request $request){
     $blog->title = $title;
     $blog->link = $request->link;
     $blog->content = $description;
+    $blog->meta = $description;
     $blog->author = $author;
     $blog->category = $category;
     $blog->image_one = $image_one;
@@ -2710,6 +2711,7 @@ public function edit_Blog(Request $request, $id){
     $updateDetails = array(
         'title' => $request->title,
         'content' => $request->content,
+        'meta' => $request->content,
         'author' => $request->author,
         'category' => $request->cat,
         'link' => $request->link,
