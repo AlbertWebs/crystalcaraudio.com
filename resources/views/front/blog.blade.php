@@ -1,5 +1,5 @@
 <div class="container">
-        
+
 
     <div class="blog-section font2 media-with-zoom appear-animate" data-animation-name="fadeInUpShorter" data-animation-delay="250">
         <div class="heading">
@@ -24,7 +24,7 @@
                 }
             }">
 
-            <?php $Blog = DB::table('blogs')->limit('4')->get(); ?>
+            <?php $Blog = DB::table('blogs')->limit('4')->orderBy('id','DESC')->get(); ?>
             @foreach($Blog as $blog)
             <article class="post mb-3">
                 <div class="post-box">
@@ -44,7 +44,7 @@
                                 {{date('Y', strtotime($blog->created_at))}}</span>
                             <span class="meta-author"><i class="far fa-user"></i>By <a href="#"
                                     title="Posts by John Doe" rel="author">Christine Nyabuto</a></span>
-                         
+
                         </div>
 
                         <h2 class="post-title">
@@ -65,7 +65,7 @@
             </article>
             @endforeach
 
-            
+
         </div>
         <!-- End .owl-carousel -->
     </div>

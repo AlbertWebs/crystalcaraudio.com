@@ -156,8 +156,8 @@
 
     @include('front.newly-arrived')
 
-    
-    
+
+
     @include('front.blog')
     @include('front.home-tags')
 </main>
