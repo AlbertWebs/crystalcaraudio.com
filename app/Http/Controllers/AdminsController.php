@@ -2494,7 +2494,7 @@ public function add_Blog(Request $request){
 
     $author = Auth::user()->name;
     $category = $request->cat;
-    $path = 'uploads/blog';
+    $path = 'uploads/blogs';
     if(isset($request->image_one)){
         $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
